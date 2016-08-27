@@ -1,5 +1,6 @@
 require 'pry'
 
+# My solution
 def mul(a, b)
   return 0 if [a, b].include?(0)
     
@@ -11,7 +12,15 @@ def mul(a, b)
 	sum
 end
 
-p mul(4, 3)
+# Clever solution
+def mul(a,b)
+  Array.new(b,a).reduce(:+) || 0
+end
+
+p nil || 0
+p false || true
+
+p mul(4,3)
 p mul(4,0)
 p mul(0,4)
 p mul(4,1)
