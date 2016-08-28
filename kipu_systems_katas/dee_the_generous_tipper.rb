@@ -13,7 +13,7 @@ def calc_tip(p, r)
 		else (temp_tip / 2) - 1
 	end
 
-	return final_tip = 0 if final_tip < 0
+	return 0 if final_tip < 0
 	final_tip
 end
 
