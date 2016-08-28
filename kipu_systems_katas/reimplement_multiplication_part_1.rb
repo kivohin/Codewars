@@ -17,9 +17,11 @@ def mul(a,b)
   Array.new(b,a).reduce(:+) || 0
 end
 
+# Other examples
 p nil || 0
 p false || true
 
+# Test examples
 p mul(4,3)
 p mul(4,0)
 p mul(0,4)
