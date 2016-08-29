@@ -13,8 +13,10 @@ def calc_tip(p, r)
 		else (temp_tip / 2) - 1
 	end
 
-	return 0 if final_tip < 0
-	final_tip
+	# return 0 if final_tip < 0
+	# final_tip
+
+	final_tip < 0 ? 0 : final_tip
 end
 
 puts calc_tip(15, 1)
